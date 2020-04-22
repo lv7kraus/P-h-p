@@ -123,5 +123,62 @@ $b = 4;
 
 var_dump($a&&$b);
 
+$ladislavKraus1 = 1;
+$ladislavKraus2 = 1;
+
+if($ladislavKraus1 < $ladislavKraus2){
+    echo"Ladislav Kraus";
+}
+if($ladislavKraus1 > $ladislavKraus2){
+    echo"Ladislav";
+}
+
+else{
+    echo"Kraus";
+}
+
+if($ladislavKraus1 >= $ladislavKraus2){
+    echo"Ladislav";
+if($ladislavKraus1 == $ladislavKraus2){
+    echo"Kraus";
+}
+}
+
+switch ($ladislavKraus1) {
+    case 0:
+    break;
+    case 1:
+    echo"zlutej banan";
+    break;
+    case 2: 
+    break;
+    case 3:
+    break;
+    case 4:
+    break;
+    case 5:
+    default:
+        break;
+}  
+$produkty = array (1 =>"banan", 2 =>"banann",3 =>"bannan2", 4 =>"banann3", 5 =>"banan4", 6 =>"bbanan5", 7 =>"baanan6", 8 =>"banaann", 9 =>"banann8", 10 =>"banannnn9");
+var_dump($produkty);
+$produkty ["x"] = array();
+$produkty ["y"] = array();
+$produkty ["z"] = array(
+    array('jméno' => 'a', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'smeták', 'věk' => 2),
+    array('jméno' => 'e', 'pohlaví' => 'Ž', 'druh' => 'kočka', 'rasa' => 'perská', 'věk' => 8),
+    array('jméno' => 'i', 'pohlaví' => 'N', 'druh' => 'pavián', 'rasa' => 'oranžová', 'věk' => 7),
+    array('jméno' => 'o', 'pohlaví' => 'UH', 'druh' => 'člověk', 'rasa' => 'bílá', 'věk' => 3),
+    array('jméno' => 'u', 'pohlaví' => 'N', 'druh' => 'kobliha', 'rasa' => 'jahodová', 'věk' => 9),
+    array('jméno' => 'm', 'pohlaví' => 'M', 'druh' => 'párek', 'rasa' => 'mletá', 'věk' => 5),
+    array('jméno' => 'n', 'pohlaví' => 'Ž', 'druh' => 'klokan', 'rasa' => 'skakavi', 'věk' => 585),
+    array('jméno' => 'b', 'pohlaví' => 'M', 'druh' => 'losos', 'rasa' => 'obecna', 'věk' => 5876975),
+    array('jméno' => 'g', 'pohlaví' => 'N', 'druh' => 'kapusta', 'rasa' => 'listnata', 'věk' => 257),
+    array('jméno' => 'f', 'pohlaví' => 'M', 'druh' => 'ananas', 'rasa' => 'dobry', 'věk' => 9),
+);
+var_dump($produkty);
+            
+         
+
 ?>
 
