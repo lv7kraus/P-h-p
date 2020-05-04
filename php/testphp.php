@@ -1,5 +1,10 @@
 <?PHP
 
+require 'tracy/tracy.phar';
+use Tracy\Debugger;
+Debugger::enable();
+Debugger::$strictMode = true;
+
 echo 666;
 echo"<br>";
 print (66.6);
@@ -17,7 +22,7 @@ $b = 4;
 
 echo "<br>";
 
-var_dump($a+$b);
+dump($a+$b);
 
 echo "<br>";
 
@@ -25,7 +30,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a-$b);
+dump($a-$b);
 
 echo "<br>";
 
@@ -33,7 +38,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a*$b);
+dump($a*$b);
 
 echo "<br>";
 
@@ -41,7 +46,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a/$b);
+dump($a/$b);
 
 echo "<br>";
 
@@ -49,7 +54,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a+=$b);
+dump($a+=$b);
 
 echo "<br>";
 
@@ -57,7 +62,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a-=$b);
+dump($a-=$b);
 
 echo "<br>";
 
@@ -65,7 +70,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a*=$b);
+dump($a*=$b);
 
 echo "<br>";
 
@@ -73,7 +78,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a/=$b);
+dump($a/=$b);
 
 echo "<br>";
 
@@ -81,7 +86,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a==$b);
+dump($a==$b);
 
 echo "<br>";
 
@@ -89,7 +94,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a!=$b);
+dump($a!=$b);
 
 echo "<br>";
 
@@ -97,7 +102,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a>$b);
+dump($a>$b);
 
 echo "<br>";
 
@@ -105,7 +110,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a<$b);
+dump($a<$b);
 
 echo "<br>";
 
@@ -113,7 +118,7 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a||$b);
+dump($a||$b);
 
 echo "<br>";
 
@@ -121,26 +126,26 @@ $a = 8;
 echo"<br>";
 $b = 4;
 
-var_dump($a&&$b);
+dump($a&&$b);
 
 $ladislavKraus1 = 1;
 $ladislavKraus2 = 1;
 
 if($ladislavKraus1 < $ladislavKraus2){
-    echo"Ladislav Kraus";
+    echo"Ladislav Kraus <br>";
 }
 if($ladislavKraus1 > $ladislavKraus2){
-    echo"Ladislav";
+    echo"Ladislav <br>";
 }
 
 else{
-    echo"Kraus";
+    echo"Kraus <br>";
 }
 
 if($ladislavKraus1 >= $ladislavKraus2){
-    echo"Ladislav";
+    echo"Ladislav <br>";
 if($ladislavKraus1 == $ladislavKraus2){
-    echo"Kraus";
+    echo"Kraus <br>";
 }
 }
 
@@ -161,7 +166,7 @@ switch ($ladislavKraus1) {
         break;
 }  
 $produkty = array (1 =>"banan", 2 =>"banann",3 =>"bannan2", 4 =>"banann3", 5 =>"banan4", 6 =>"bbanan5", 7 =>"baanan6", 8 =>"banaann", 9 =>"banann8", 10 =>"banannnn9");
-var_dump($produkty);
+dump($produkty);
 $produkty ["x"] = array();
 $produkty ["y"] = array();
 $produkty ["z"] = array(
@@ -176,7 +181,7 @@ $produkty ["z"] = array(
     array('jméno' => 'g', 'pohlaví' => 'N', 'druh' => 'kapusta', 'rasa' => 'listnata', 'věk' => 257),
     array('jméno' => 'f', 'pohlaví' => 'M', 'druh' => 'ananas', 'rasa' => 'dobry', 'věk' => 9),
 );
-var_dump($produkty);
+dump($produkty);
             
          
 
