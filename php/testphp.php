@@ -182,8 +182,49 @@ $produkty ["z"] = array(
     array('jméno' => 'f', 'pohlaví' => 'M', 'druh' => 'ananas', 'rasa' => 'dobry', 'věk' => 9),
 );
 dump($produkty);
-            
-         
 
+$radekLadislavKraus=11;
+$sloupecLadislavKraus=17;
+            echo "<table border=1>";
+            for($i=1;$i<=$radekLadislavKraus;$i++) {
+                echo "<tr>";
+for($x=1;$x<=$sloupecLadislavKraus;$x++){
+    echo "<td>".$i."-".$x."</td>";
+}
+                echo "</tr>";
+            }
+            echo "</table><br><br><br>";
+
+$a = array(1,2,5,6,7,8);
+echo"<br>";
+$a = abs($a[3]);
+echo "<br>". $a;
+
+$a = array(1,2,5);
+echo"<br>";
+$a = max($a);
+echo "<br>". $a;
+         
+echo "<br>";
+$jmena = "Audi, Honda, Ferrari, Citroen";
+
+$jmena = ucwords($jmena);
+var_dump($jmena);
+echo"<br>";
+$jmena = strtolower($jmena);
+var_dump($jmena);
+
+echo sizeof($produkty);
+array_splice($produkty, 0, 1, "banan");
+
+echo"<br>";
+echo"<br>";
+
+function mocniny($cislo , $exponent){
+            $vysledek=pow($cislo, $exponent);
+            return $vysledek;
+        }
+echo mocniny(5, 10);
+  
 ?>
 
